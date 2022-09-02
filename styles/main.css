@@ -1,0 +1,320 @@
+/* ------------------------------------------Global Resets------------------------------------------ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9
+}
+
+.container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: #14c38e;
+}
+
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+/* ------------------------------------------Header and Navigation------------------------------------------ */
+.brand {
+  z-index: 1;
+}
+
+.logo {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 800;
+  color: #14c38e;
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0 rgba(0, 0, 0, 1);
+}
+
+header {
+  background-color: #cdf0ea;
+  padding: 1.3rem 0;
+}
+
+section {
+  padding: 1.5rem 0;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0.12rem 0.12rem 0 rgba(0, 0, 0, 1);
+  color: #14c38e;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-links {
+  position: absolute;
+  top: 5vh;
+  left: 0px;
+  width: 100%;
+  height: 95vh;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #cdf0ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(0,-100vh);
+  transition: transform;
+  transition-duration: 1.5s;
+  opacity: 0.9;
+}
+
+.nav-active {
+  transform: translate(0, 0);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.burger {
+  z-index: 1;
+}
+
+.line1, .line2, .line3 {
+  width: 30px;
+  height: 7px;
+  background-color: #14c38e;
+  transition: transform;
+  transition-duration: 0.4s;
+}
+
+.burger-active .line1 {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.burger-active .line2 {
+  opacity: 0;
+}
+
+.burger-active .line3 {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.line2, .line3 {
+  margin-top: 3px;
+}
+
+.link {
+  list-style: none;
+  font-weight: 900;
+}
+
+.link a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #14c38e;
+  display: block;
+  text-align: center;
+}
+
+.link + .link {
+  margin-top: 0.3rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ------------------------------------------Hero Section------------------------------------------ */
+.hero {
+  padding: 3rem 0;
+}
+
+.sub-head {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.hero-head {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #14c38e;
+  margin-bottom: 1rem;
+  text-shadow: 0.2rem 0.2rem 0 rgba(0, 0, 0, 1);
+}
+
+.intro {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.social-link {
+  background-color: #f9f9f9;
+  border: 1px solid #14c38e;
+  padding: 0.3em 0.7em;
+  color: #14c38e;
+  font-size: 0.8rem;
+  font-weight: 900;
+  transition: all;
+  transition-duration: 0.5s;
+  box-shadow:
+  5px 5px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: space-between;
+}
+
+.social-link:hover, .social-link:active {
+  color: #f9f9f9;
+  background-color: #14c38e;
+  box-shadow: none;
+  transform: translate(5px, 5px);
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------------------About Section------------------------------------------ */
+
+.about-para {
+  font-weight: 400;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.about-img {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* ------------------------------------------Project Section------------------------------------------ */
+.project {
+  background-color: #cdf0ea;
+  padding-bottom: 1rem;
+  border-radius: 20px;
+  box-shadow:
+  5px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.project-img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.project-txt {
+  width: 80%;
+  margin: 1rem auto 0;
+}
+
+.project-title {
+  margin-bottom: 0.4rem;
+  color: #14c38e;
+  font-weight: 900;
+}
+
+.project-desc {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.tech-used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.html {
+  color: #EF5B0C;
+}
+
+.css {
+  color: #5800FF;
+}
+
+.jscript {
+  color: #FFB200;
+}
+
+.bootstrap {
+  color: #7A0BC0;
+}
+
+.icon { 
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.icon-txt {
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+.project + .project {
+  margin-top: 2rem;
+}
