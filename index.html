@@ -20,31 +20,31 @@
   <body>
     <header>
       <nav class="container nav-container">
-          <div class="brand"><h3 class="logo">&lt;SHD/&gt;</h3></div>
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-            <ul class="nav-links">
-              <li class="link"><a href="">HOME</a></li>
-              <li class="link"><a href="">ABOUT</a></li>
-              <li class="link"><a href="">PROJECTS</a></li>
-              <li class="link"><a href="">CONTACT</a></li>
-            </ul>
+        <div class="brand"><h3 class="logo">&lt;SHD/&gt;</h3></div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+          <li class="link"><a href="#hero">HOME</a></li>
+          <li class="link"><a href="#about-me">ABOUT</a></li>
+          <li class="link"><a href="#projects">PROJECTS</a></li>
+          <li class="link"><a href="#contact">CONTACT</a></li>
+        </ul>
       </nav>
     </header>
 
-    <section class="hero">
+    <section id="hero">
       <div class="container">
         <p class="sub-head">Hi There! I'm</p>
         <h1 class="hero-head">Shadmaan Hussain</h1>
         <p class="intro">
-          A <span class="highlight">front end web developer</span> and a
-          student of <span class="highlight">Computer Science</span>.
+          A <span class="highlight-hero">front end web developer</span> and a student
+          of <span class="highlight-hero">Computer Science</span>.
         </p>
         <div class="links">
-          <a class="link" href=""
+          <a class="links-a" href=""
             ><button class="social-link">
               <span class="social-link-item"
                 ><i class="fa-brands fa-github fa-lg"></i
@@ -52,7 +52,7 @@
               <span class="social-link-item">Github</span>
             </button></a
           >
-          <a class="link" href=""
+          <a class="links-a" href=""
             ><button class="social-link">
               <span class="social-link-item"
                 ><i class="fa-brands fa-linkedin fa-lg"></i
@@ -60,7 +60,7 @@
               <span class="social-link-item">Linkedin</span>
             </button></a
           >
-          <a class="link" href=""
+          <a class="links-a" href=""
             ><button class="social-link">
               <span class="social-link-item"
                 ><i class="fa-solid fa-envelope fa-lg"></i
@@ -72,8 +72,8 @@
       </div>
     </section>
 
-    <section class="about-me">
-      <div class="container">
+    <section id="about-me">
+      <div class="container about-flex">
         <div class="about-txt">
           <h2 class="section-heading">About Me</h2>
           <p class="about-para">
@@ -100,82 +100,84 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section id="projects">
       <div class="container">
         <h2 class="section-heading">Projects</h2>
-        <div class="project">
-          <img
-            class="project-img"
-            src="images/Random-Password-Generator.png"
-            alt=""
-          />
-          <div class="project-txt">
-            <h3 class="project-title">Random Password Generator</h3>
-            <p class="project-desc">
-              Random password generator is a simple application which upon
-              clicking on generate passwords, generates two random passwords
-              which can be copied and used anywhere.
-            </p>
-            <div class="tech-used">
-              <div class="icon">
-                <i class="fa-brands fa-html5 html"></i>
-                <h4 class="icon-txt">HTML</h4>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-css3-alt css"></i>
-                <h4 class="icon-txt">CSS</h4>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-js jscript"></i>
-                <h4 class="icon-txt">Javascript</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <img class="project-img" src="images/Unit-Converter.png" alt="" />
-          <div class="project-txt">
-            <h3 class="project-title">Unit Converter</h3>
-            <p class="project-desc">
-              This is a simple app which is used to convert the given value in
-              the input field into various units of the metric system.
-            </p>
-            <div class="tech-used">
-              <div class="icon">
-                <i class="fa-brands fa-html5 html"></i>
-                <h4 class="icon-txt">HTML</h4>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-css3-alt css"></i>
-                <h4 class="icon-txt">CSS</h4>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-js jscript"></i>
-                <h4 class="icon-txt">Javascript</h4>
+        <div class="project-container">
+          <div class="project pr-1">
+            <img
+              class="project-img"
+              src="images/Random-Password-Generator.png"
+              alt=""
+            />
+            <div class="project-txt">
+              <h3 class="project-title">Random Password Generator</h3>
+              <p class="project-desc">
+                Random password generator is a simple application which upon
+                clicking on generate passwords, generates two random passwords
+                which can be copied and used anywhere.
+              </p>
+              <div class="tech-used">
+                <div class="icon">
+                  <i class="fa-brands fa-html5 html"></i>
+                  <h4 class="icon-txt">HTML</h4>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-css3-alt css"></i>
+                  <h4 class="icon-txt">CSS</h4>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-js jscript"></i>
+                  <h4 class="icon-txt">Javascript</h4>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="project">
-          <img class="project-img" src="images/Item-Lister.png" alt="" />
-          <div class="project-txt">
-            <h3 class="project-title">Item Lister</h3>
-            <p class="project-desc">
-              A web application where the user can enter any item and list it.
-              User can also search for an item. Delete it or edit it.
-            </p>
-            <div class="tech-used">
-              <div class="icon">
-                <i class="fa-brands fa-html5 html"></i>
-                <h4 class="icon-txt">HTML</h4>
+          <div class="project pr-2">
+            <img class="project-img" src="images/Unit-Converter.png" alt="" />
+            <div class="project-txt">
+              <h3 class="project-title">Unit Converter</h3>
+              <p class="project-desc">
+                This is a simple app which is used to convert the given value in
+                the input field into various units of the metric system.
+              </p>
+              <div class="tech-used">
+                <div class="icon">
+                  <i class="fa-brands fa-html5 html"></i>
+                  <h4 class="icon-txt">HTML</h4>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-css3-alt css"></i>
+                  <h4 class="icon-txt">CSS</h4>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-js jscript"></i>
+                  <h4 class="icon-txt">Javascript</h4>
+                </div>
               </div>
-              <div class="icon">
-                <i class="fa-brands fa-bootstrap bootstrap"></i>
-                <h4 class="icon-txt">Bootstrap</h4>
-              </div>
-              <div class="icon">
-                <i class="fa-brands fa-js jscript"></i>
-                <h4 class="icon-txt">Javascript</h4>
+            </div>
+          </div>
+          <div class="project pr-3">
+            <img class="project-img" src="images/Item-Lister.png" alt="" />
+            <div class="project-txt">
+              <h3 class="project-title">Item Lister</h3>
+              <p class="project-desc">
+                A web application where the user can enter any item and list it.
+                User can also search for an item. Delete it or edit it.
+              </p>
+              <div class="tech-used">
+                <div class="icon">
+                  <i class="fa-brands fa-html5 html"></i>
+                  <h4 class="icon-txt">HTML</h4>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-bootstrap bootstrap"></i>
+                  <h4 class="icon-txt">Bootstrap</h4>
+                </div>
+                <div class="icon">
+                  <i class="fa-brands fa-js jscript"></i>
+                  <h4 class="icon-txt">Javascript</h4>
+                </div>
               </div>
             </div>
           </div>
@@ -183,7 +185,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contact">
       <div class="container">
         <h2 class="section-heading">Contact Me</h2>
       </div>
