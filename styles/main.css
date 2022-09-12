@@ -65,6 +65,19 @@ body {
   color: #14c38e;
 }
 
+section {
+  animation: sectionLoad 1s;
+}
+
+@keyframes sectionLoad {
+  from {
+    transform: translate(-100vw, 0);
+  }
+  to {
+    transform: translate(0,0);
+  }
+}
+
 
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Source Code Pro', monospace; */
@@ -103,6 +116,8 @@ section {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  animation-name: navbarLoad;
+  animation-duration: 1s;
 }
 
 .nav-links {
@@ -205,6 +220,15 @@ section {
 .flex {
   display: flex;
   gap: 1rem;
+}
+
+@keyframes navbarLoad {
+  from {
+    transform: translate(0, -100px);
+  }
+  to {
+    transform: translate(0,0);
+  }
 }
 
 /* ------------------------------------------Hero Section------------------------------------------ */
