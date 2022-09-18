@@ -253,6 +253,9 @@ section {
 .intro {
   font-weight: 900;
   font-size: 1.5rem;
+}
+
+.typewriter {
   margin-bottom: 3rem;
 }
 
@@ -277,6 +280,31 @@ section {
 .highlight-hero:hover::after {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+#type {
+  position: relative;
+}
+
+#type::after {
+  content: '';
+  width: 3px;
+  position: absolute;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  right: -7px;
+  background-color: #14c38e;
+  animation: typewriter 0.5s infinite ease;
+}
+
+@keyframes typewriter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .links-a {
