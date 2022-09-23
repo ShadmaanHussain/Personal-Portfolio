@@ -24,7 +24,7 @@
   });
 }());
 
-
+// Typewriter Effect
 (function typewriter() {
     const skills = ["eat.", "sleep.", "code.", "workout.", "play games.", "watch tv series.", "be awsome."];
     let count = 0;
