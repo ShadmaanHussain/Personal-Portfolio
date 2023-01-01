@@ -362,6 +362,12 @@ section {
   padding-bottom: 1rem;
   border-radius: 20px;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+  transition: all 0.5s ease;
+}
+
+.project:hover {
+  transform: translate(5px, 5px);
+  box-shadow: 2px 2px 0px #000;
 }
 
 .project-img {
